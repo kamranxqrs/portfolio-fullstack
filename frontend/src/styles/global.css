@@ -1,0 +1,47 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons globally */
+.home-btn {
+  background: linear-gradient(135deg, #e0f7fa, #e1f5fe);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  cursor: pointer;
+}
+.home-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #b2ebf2, #b3e5fc);
+}
+.home-btn:focus {
+  outline: none;
+}
+
+/* Shadow utilities */
+.shadow-light { box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+.shadow-medium { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+.shadow-heavy { box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up { opacity: 0; animation: fadeInUp 0.8s forwards; }
+.fade-in-up.delay-1 { animation-delay: 0.2s; }
+.fade-in-up.delay-2 { animation-delay: 0.4s; }
+.fade-in-up.delay-3 { animation-delay: 0.6s; }
+.fade-in-up.delay-4 { animation-delay: 0.8s; }

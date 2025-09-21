@@ -1,0 +1,43 @@
+/* =======================
+   CONTACT FORM SECTION
+======================= */
+.contact-section {
+  padding: 4rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #f0f9ff, #e0f7fa);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+.contact-section form {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-section form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Contact submit button */
+.contact-btn {
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #38bdf8, #60a5fa);
+}
+
+/* Status messages */
+.status-success { color: #16a34a; }
+.status-error { color: #dc2626; }

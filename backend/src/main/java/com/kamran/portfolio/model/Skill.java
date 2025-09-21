@@ -1,0 +1,53 @@
+package com.kamran.portfolio.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Skill {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;        // e.g., "Java", "Spring Boot", "React"
+    private String level;       // e.g., "Beginner", "Intermediate", "Advanced"
+    private String category;    // e.g., "Backend", "Frontend", "Database"
+
+    // Constructors
+    public Skill() {}
+
+    public Skill(String name, String level, String category) {
+        this.name = name;
+        this.level = level;
+        this.category = category;
+    }
+
+    // Getters & Setters
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
+}
