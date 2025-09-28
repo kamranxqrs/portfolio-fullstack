@@ -1,16 +1,27 @@
-# Use Java 17 runtime
-FROM openjdk:17-jdk-alpine
+# Stage 1: Build JAR with Maven using Java 17
+FROM maven:3.9.3-eclipse-temurin-17 AS build
 
-# Set working directory
 WORKDIR /app
 
-# Copy pre-built JAR
-COPY target/portfolio-0.0.1-SNAPSHOT.jar app.jar
+# Copy pom.xml and source code
+COPY pom.xml .
+COPY src ./src
 
-# Expose port
+# Build the JAR (skip tests to speed up)
+RUN mvn clean package -DskipTests
+
+# Stage 2: Use Java 17 runtime for the final image
+FROM eclipse-temurin:17-jdk-alpine
+
+WORKDIR /app
+
+# Copy the fat JAR from build stage
+COPY --from=build /app/target/portfolio-0.0.1-SNAPSHOT.jar app.jar
+
+# Expose default Spring Boot port
 EXPOSE 8080
 
-# Default PORT for Render
+# Set default PORT for Render
 ENV PORT=8080
 
 # Run the app
