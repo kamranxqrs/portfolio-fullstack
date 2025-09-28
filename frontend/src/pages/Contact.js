@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { addContact } from '../api/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../index.css'; // Make sure hover-shadow and new styles are included
+import '../index.css';
 
 function Contact() {
   const [formData, setFormData] = useState({

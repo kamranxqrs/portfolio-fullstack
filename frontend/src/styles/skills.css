@@ -2,42 +2,61 @@
    SKILLS SECTION
 ======================= */
 .skills-section {
-  padding: 4rem 2rem;
-  border-radius: 16px;
-  margin-bottom: 3rem;
-  background: linear-gradient(135deg, #f0f9ff, #e0f7fa);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  padding: 2rem; 
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-/* Skill row container */
+.skills-section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
 .skills-progress {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; 
 }
 
-/* Label above progress bar */
 .skills-progress .skill-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 0.6rem;
+  font-size: 0.95rem; 
+  margin-bottom: 0.4rem; 
   color: #1e293b;
 }
 
-/* Progress bar container */
 .skill-progress {
-  height: 22px; /* medium-thick */
-  background-color: #f1f5f9; /* light background */
+  height: 16px; 
+  background-color: #f1f5f9; 
   border-radius: 12px;
   overflow: hidden;
   position: relative;
 }
 
-/* Animated progress bar */
 .skill-progress .progress-bar {
   height: 100%;
   border-radius: 12px;
-  background: linear-gradient(90deg, #22c55e, #16a34a);
-  transition: width 1.5s ease-in-out;
+  background: linear-gradient(90deg, #028d5a); 
+  transition: width 1.2s ease-in-out;
+}
+
+.skills-section h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.skill-card-hover {
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.skill-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }

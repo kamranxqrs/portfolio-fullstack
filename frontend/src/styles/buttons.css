@@ -1,6 +1,3 @@
-/* =======================
-   BUTTON GRADIENT UTILITIES
-======================= */
 .btn-primary-gradient {
   background: linear-gradient(135deg, #0ea5e9, #3b82f6);
   border: none;

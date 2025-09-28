@@ -9,7 +9,6 @@ body {
   padding: 0;
 }
 
-/* Buttons globally */
 .home-btn {
   background: linear-gradient(135deg, #e0f7fa, #e1f5fe);
   border: none;
@@ -30,12 +29,10 @@ body {
   outline: none;
 }
 
-/* Shadow utilities */
 .shadow-light { box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
 .shadow-medium { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
 .shadow-heavy { box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
 
-/* Fade-in animation */
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }

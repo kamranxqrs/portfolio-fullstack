@@ -19,8 +19,8 @@ public class PortfolioApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")                    // Allow all backend endpoints
-                        .allowedOrigins("http://localhost:3000") // Allow your React frontend
+                registry.addMapping("/**")                    
+                        .allowedOrigins("http://localhost:3000") 
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };

@@ -1,0 +1,148 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f0fbff; 
+  font-family: Arial, sans-serif;
+}
+
+.home-page {
+  min-height: 80vh;
+  padding: 2rem 1rem;
+}
+
+.left-col {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.left-col .profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.left-col .name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.left-col .education h4 {
+  font-weight: 700; 
+  margin-bottom: 1rem;
+}
+
+.left-col .education h5 {
+  font-weight: 600; 
+  margin-bottom: 0.25rem;
+}
+
+.left-col .education p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
+.skills h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.badge-tech {
+  background: #61dafb; 
+  color: #000; 
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 0.2rem;
+  display: inline-block;
+}
+
+.left-col, .right-col {
+  transition: all 0.3s ease;
+}
+
+.left-col:hover, .right-col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.right-col {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.right-col h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.project-item {
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.project-item:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-3px);
+}
+
+.connect-me h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.connect-me .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.connect-me .social-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background: #f5f5f5;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.connect-me .social-badge:hover {
+  background: #007bff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.row > .col-lg-4,
+.row > .col-lg-8,
+.row > .col-md-5,
+.row > .col-md-7 {
+  padding: 1rem;
+}
+
+@media (max-width: 992px) {
+  .left-col, .right-col {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .connect-me .social-links {
+    justify-content: center;
+  }
+}

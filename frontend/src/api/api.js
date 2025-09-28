@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-// Base URL of your Spring Boot backend
 const API_BASE_URL = 'http://localhost:8080';
 
-// Create an Axios instance
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
@@ -27,9 +25,9 @@ export const deleteSkill = (id) => api.delete(`/skills/${id}`);
 export const getContacts = () => api.get('/contacts');
 export const addContact = (contact) => api.post('/contacts', contact);
 
-// Users APIs (optional)
+// Users APIs
 export const getUsers = () => api.get('/users');
 export const addUser = (user) => api.post('/users', user);
 
-// Resume (static file download)
+// Resume
 export const downloadResume = () => `${API_BASE_URL}/resume.pdf`;

@@ -1,10 +1,8 @@
-/* =======================
-   FOOTER
-======================= */
 .footer {
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: rgba(4, 17, 49, 0.95); 
   color: #f8f9fa;
   text-align: center;
   font-size: 0.9rem;
+  box-shadow: 0 -4px 12px rgba(160, 82, 82, 0.15);
 }

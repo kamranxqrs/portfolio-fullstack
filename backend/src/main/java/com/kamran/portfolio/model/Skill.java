@@ -12,9 +12,9 @@ public class Skill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;        // e.g., "Java", "Spring Boot", "React"
-    private String level;       // e.g., "Beginner", "Intermediate", "Advanced"
-    private String category;    // e.g., "Backend", "Frontend", "Database"
+    private String name;       
+    private String level;      
+    private String category;   
 
     // Constructors
     public Skill() {}

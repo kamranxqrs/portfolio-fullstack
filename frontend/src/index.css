@@ -1,15 +1,13 @@
 /* index.css – minimal global setup */
 
-/* 1. Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 2. Root variables */
 :root {
-  --primary-color: #0d6efd;   /* Bootstrap primary */
+  --primary-color: #0d6efd;   
   --secondary-color: #6c757d;
   --dark-color: #212529;
   --light-color: #f8f9fa;
@@ -17,7 +15,6 @@
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 3. Base styling */
 body {
   font-family: var(--font-family);
   background-color: var(--light-color);
@@ -25,7 +22,6 @@ body {
   line-height: 1.6;
 }
 
-/* 4. Utility classes (optional, reusable across project) */
 .text-center {
   text-align: center;
 }
@@ -49,16 +45,15 @@ body {
 .p-3 {
   padding: 1rem;
 }
-/* Resume Section Full Width Background */
+
 .resume-section {
-  background: linear-gradient(135deg, #e0f7fa, #f0f9ff); /* sky blue gradient */
+  background: linear-gradient(135deg, #e0f7fa, #f0f9ff); 
   width: 100%;
   padding: 5rem 1rem;
 }
 
-/* Gradient button for resume */
 .btn-primary-gradient {
-  background: linear-gradient(135deg, #0ea5e9, #3b82f6); /* blue gradient */
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6); 
   border: none;
   color: #fff;
   font-weight: 600;
@@ -70,4 +65,3 @@ body {
   background: linear-gradient(135deg, #38bdf8, #60a5fa);
   transform: translateY(-3px);
 }
-

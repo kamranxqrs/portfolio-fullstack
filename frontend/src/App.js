@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Modular CSS imports
 import './styles/global.css';
 import './styles/navbar.css';
 import './styles/hero.css';
@@ -12,7 +11,6 @@ import './styles/contact.css';
 import './styles/buttons.css';
 import './styles/responsive.css';
 
-// Components and Pages
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -34,7 +32,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
-        {/* Footer kept inside App.js */}
+
         <footer className="bg-dark text-white text-center py-3 mt-auto">
           &copy; {new Date().getFullYear()} Kamran Qureshi. All Rights Reserved.
         </footer>

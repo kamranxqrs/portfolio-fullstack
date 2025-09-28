@@ -14,7 +14,6 @@ function Resume() {
         <h2 className="section-header mb-4">My Resume</h2>
         <p className="lead mb-4">You can view or download my resume below:</p>
 
-        {/* PDF Viewer */}
         <iframe
           src={downloadResume()}
           title="Resume Preview"
