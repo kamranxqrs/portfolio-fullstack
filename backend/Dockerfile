@@ -7,8 +7,8 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-# Build the JAR (skip tests to speed up)
-RUN mvn clean package -DskipTests
+# Build the JAR
+RUN mvn clean package
 
 # Stage 2: Use Java 17 runtime for the final image
 FROM eclipse-temurin:17-jdk-alpine

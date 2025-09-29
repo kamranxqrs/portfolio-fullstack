@@ -1,9 +1,10 @@
-HELP.md
+# Project build directories
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### IDEs ###
 ### STS ###
 .apt_generated
 .classpath
@@ -32,5 +33,9 @@ build/
 ### VS Code ###
 .vscode/
 
-# Ignore sensitive properties
+# Ignore sensitive properties and environment files
 src/main/resources/application.properties
+.env
+
+# Optional: ignore HELP.md
+HELP.md
