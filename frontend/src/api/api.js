@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'https://portfolio-backend-cg2j.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -21,7 +21,7 @@ export const addSkill = (skill) => api.post('/skills', skill);
 export const updateSkill = (id, skill) => api.put(`/skills/${id}`, skill);
 export const deleteSkill = (id) => api.delete(`/skills/${id}`);
 
-// Contact APIs
+// Contacts APIs
 export const getContacts = () => api.get('/contacts');
 export const addContact = (contact) => api.post('/contacts', contact);
 
