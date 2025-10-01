@@ -21,7 +21,7 @@ function Projects() {
       setProjects(res.data || []);
     } catch (err) {
       console.error(err);
-      setError('Failed to load projects. Make sure the backend is running.');
+      setError('Failed to load projects. Make sure the backend is running or wait if the server was inactive.');
     } finally {
       setLoading(false);
     }
@@ -49,10 +49,11 @@ function Projects() {
       </div>
 
       {loading ? (
-        <div className="d-flex justify-content-center py-5">
-          <div className="spinner-border" role="status" aria-hidden="true">
-            <span className="visually-hidden">Loading...</span>
-          </div>
+        <div className="d-flex flex-column justify-content-center align-items-center py-5">
+          <div className="spinner-border mb-3" role="status" aria-hidden="true"></div>
+          <p className="text-center">
+            Fetching projects from backend... Please wait if the server was inactive.
+          </p>
         </div>
       ) : error ? (
         <div className="alert alert-danger text-center">{error}</div>

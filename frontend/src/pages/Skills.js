@@ -40,12 +40,37 @@ const skillGroups = [
 
 function Skills() {
   const [skills, setSkills] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
+    setLoading(true);
+    setError(null);
     getSkills()
-      .then(res => setSkills(res.data))
-      .catch(err => console.error("Error fetching skills:", err));
+      .then(res => {
+        setSkills(res.data);
+      })
+      .catch(err => {
+        console.error("Error fetching skills:", err);
+        setError("Failed to load skills. Make sure the backend is running or wait if the server was inactive.");
+      })
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) {
+    return (
+      <div className="d-flex flex-column justify-content-center align-items-center py-5">
+        <div className="spinner-border mb-3" role="status" aria-hidden="true"></div>
+        <p className="text-center">
+          Fetching skills from backend... Please wait if the server was inactive.
+        </p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return <div className="alert alert-danger text-center">{error}</div>;
+  }
 
   const skillsMap = {};
   skills.forEach(s => skillsMap[s.name] = s);
