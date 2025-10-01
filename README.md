@@ -11,18 +11,19 @@ A **fullstack personal portfolio application** showcasing projects, skills, and 
 ## 🛠️ Tech Stack  
 
 **Frontend**  
+- JavaScript
 - React.js  
 - Bootstrap  
 - Netlify (deployment)  
 
 **Backend**  
 - Java Spring Boot  
-- Maven  
 - Hibernate (JPA)  
 - MySQL Database  
 - Render (deployment)  
 
 **Tools**  
+- Maven 
 - Postman (API testing)  
 - Git & GitHub (version control)  
 
